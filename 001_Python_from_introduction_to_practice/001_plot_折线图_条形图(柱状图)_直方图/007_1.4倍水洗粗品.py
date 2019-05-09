@@ -17,16 +17,19 @@ plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 my_font = font_manager.FontProperties(fname='C:\WINDOWS\Fonts\MSYH.TTC')
 
 # 创建数据
-x = np.linspace(-5, 5, 100)
-y1 = np.sin(x)
-y2 = np.cos(x)
+x = [2.4, 2.6, 2.8, 3.0, 4.0]
+y1 = [79.1, 79.8, 78.8, 80.9, 79.9]
+y2 = [50.3, 50.9, 51.0, 51.0, 51.9]
+y3 = [75, 69, 64, 52, 25]
+
 
 # 创建figure窗口，指定窗口大小和分辨率
 plt.figure(dpi=128, figsize=(8, 6))
 # 画曲线1,其中color可以简写为c，linestyle可以简写为ls,推荐全写,label是图例
-plt.plot(x, y1, label='图例: sin(x)', color='red', linewidth=3.0, linestyle='-.')
+plt.scatter(x, y1, label='硫酸钾产量', color='red', linewidth=3.0, linestyle='-.')
 # 画曲线2
-plt.plot(x, y2, label='图例: cos(x)', color='blue', linewidth=5.0, linestyle='--')
+plt.scatter(x, y2, label='K2O含量', color='blue', linewidth=5.0, linestyle='-.')
+plt.scatter(x, y3, label='产品中微粒度', color='orange', linewidth=5.0, linestyle='--')
 
 
 # 设置坐标轴范围,起点和端点
@@ -39,14 +42,12 @@ plt.xlabel('横坐标标题', fontsize=14, fontproperties=my_font)
 plt.ylabel('纵坐标标题', fontsize=14, fontproperties=my_font)
 
 # 设置坐标轴刻度，刻度间隔
-my_x_ticks = np.arange(-5, 5.5, 1)
-my_y_ticks = np.arange(-2, 2.0, 0.5)
-plt.xticks(my_x_ticks)
+my_y_ticks = np.arange(0, 100, 10)
 plt.yticks(my_y_ticks)
 
 # 显示网格线，显示图例，注意该处显示中文的参数是prop，alpha透明度
 plt.grid(axis='both', color='grey', linestyle='-.', alpha=0.2)
-plt.legend(prop=my_font, loc='upper left')
+plt.legend(prop=my_font, loc='lower center')
 
 # 显示出所有设置
 plt.show()

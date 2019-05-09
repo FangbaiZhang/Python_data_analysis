@@ -11,3 +11,13 @@ print("*" * 50)
 b = np.random.randn(4, 4)
 print(b)
 print("*" * 50)
+
+# 生成随机浮点数，可以传入浮点数的个数
+c = np.random.randn(10)
+print(c)
+print("*" * 50)
+
+# 生成随机整数，参数上限和下限，生成的个数
+d = np.random.randint(-10, 10, 10)
+print(d)
+print("*" * 50)
