@@ -35,22 +35,27 @@ ax3 = plt.subplot(2,1,2)
 # 绘制ax1,先传入图形位置
 plt.sca(ax1)
 # 绘制红色曲线
-plt.plot(x, y1, color='red', linestyle='--')
+plt.plot(x, y1, label='sin(x)', color='red', linestyle='--')
 # 限制y坐标轴范围
 plt.ylim(-1.2,1.2)
+# 显示图例
+plt.legend(loc='upper center')
 
 
 # 绘制ax2
 plt.sca(ax2)
 # 绘制蓝色曲线，线条颜色和风格可以使用以下缩写方式
-plt.plot(x, y2, 'b--')
+plt.plot(x, y2, 'b--', label='cos(x)')
 plt.ylim(-1.2,1.2)
-
+# 显示图例
+plt.legend(loc='upper center')
 
 # 绘制ax3
 plt.sca(ax3)
-plt.plot(x, y3, 'y-.')
-plt.ylim(-1.2,1.2)
+plt.plot(x, y3, 'y-.', label='sin(x*x)')
+plt.ylim(-1.2,1.5)
+# 显示图例
+plt.legend(loc='upper center')
 
 
 plt.show()
