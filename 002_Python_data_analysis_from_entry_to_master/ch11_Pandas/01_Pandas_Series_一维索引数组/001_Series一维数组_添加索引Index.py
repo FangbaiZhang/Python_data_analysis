@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-# 列表添加索引,索引在左，元素在右
+# 列表添加索引,索引直接使用index参数
 t1 = pd.Series(list(range(5)), index=list('abcde'))
 print(t1)
 

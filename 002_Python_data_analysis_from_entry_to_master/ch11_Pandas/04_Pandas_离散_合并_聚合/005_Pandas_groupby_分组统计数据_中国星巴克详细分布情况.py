@@ -15,7 +15,7 @@ print('*' * 100)
 print(df.info())
 print('*' * 100)
 
-# 先提取出中国的数据
+# 先提取出中国的数据,结果是一个DataFrame
 china_data = df[df['Country'] == 'CN']
 # print(china_data)
 
@@ -23,6 +23,7 @@ china_data = df[df['Country'] == 'CN']
 grouped = china_data.groupby(by='State/Province')
 province_count = grouped['Brand'].count()
 print(province_count)
+print(type(province_count))
 
 
 

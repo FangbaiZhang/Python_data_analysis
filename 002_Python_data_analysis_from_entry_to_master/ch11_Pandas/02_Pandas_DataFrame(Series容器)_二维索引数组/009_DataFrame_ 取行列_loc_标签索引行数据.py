@@ -9,7 +9,8 @@ print(t3)
 print(type(t3))
 print('*' * 100)
 
-# 取不连续多行
+# 取连续多行loc['a':'c']，冒号和一个中括号
+# 取不连续多行，逗号和两个中括号
 t5 = t3.loc[['a', 'c']]
 print(t5)
 print(type(t5))

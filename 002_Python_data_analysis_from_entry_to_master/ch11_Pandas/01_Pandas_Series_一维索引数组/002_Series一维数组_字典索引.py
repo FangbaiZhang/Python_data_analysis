@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import string
 
-# 一维数组创建索引,索引在左，元素在右
+
 # string.ascii_uppercase可以生成ascii值，字母
 t1 = pd.Series(np.arange(10), index=list(string.ascii_uppercase[:10]))
 print(t1)

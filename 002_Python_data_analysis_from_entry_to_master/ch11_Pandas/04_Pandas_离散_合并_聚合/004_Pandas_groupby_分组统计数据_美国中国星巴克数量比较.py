@@ -31,8 +31,11 @@ for i in list(grouped)[0:2]:
 # 输出结果显示，每个国家分为一个组，放在一个元组里面，元组里面第一个元素就是国家代码，之后有一个DataFrame数据
 
 # 统计没有缺失数据的'Brand'一列的数据，即统计了每个国家星巴克的数量
+# 这样统计出来的结果是一个Series数组
 country_count = grouped['Brand'].count()
 print(country_count)
+print(type(country_count))
+print('*' * 100)
 
 # 提取美国和中国星巴克的数量
 print(country_count['US'])

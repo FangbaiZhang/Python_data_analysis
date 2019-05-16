@@ -9,7 +9,9 @@ x_values = list(range(1, 1001))
 y_values = [x**2 for x in x_values]
 
 # 画图，设置点的大小，颜色和边缘色
-plt.scatter(x_values, y_values, c='blue', edgecolor='red', s=30)
+# 使用RGB颜色，先绘图，然后右键图片显示着色板Show color picker
+# 选择想要的颜色，有对应的RGB编号，注意编号前面的#要加上
+plt.scatter(x_values, y_values, c='#B3A9FF', edgecolor='gold', s=30)
 # 使用RGB设置图标颜色,给定颜色c三个0-1的值，分别表示红绿蓝，值为1,0,0就是红色
 # plt.scatter(x_values, y_values, c=(1, 0, 0), edgecolor='red', s=30)
 

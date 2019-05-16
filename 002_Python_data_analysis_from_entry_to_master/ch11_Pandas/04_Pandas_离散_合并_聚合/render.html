@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="1c1024365192464fbe9bdaae871d8f7e" style="width:900px; height:500px;"></div>
+    <div id="7c60bedbef8e45aba973f0c428f849f8" style="width:900px; height:500px;"></div>
     <script>
-        var chart_1c1024365192464fbe9bdaae871d8f7e = echarts.init(
-            document.getElementById('1c1024365192464fbe9bdaae871d8f7e'), 'white', {renderer: 'canvas'});
-        var option_1c1024365192464fbe9bdaae871d8f7e = {
+        var chart_7c60bedbef8e45aba973f0c428f849f8 = echarts.init(
+            document.getElementById('7c60bedbef8e45aba973f0c428f849f8'), 'white', {renderer: 'canvas'});
+        var option_7c60bedbef8e45aba973f0c428f849f8 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -41,7 +41,7 @@
     "series": [
         {
             "type": "bar",
-            "name": "\u5546\u5bb6A",
+            "name": "\u661f\u5df4\u514b\u6570\u91cf",
             "data": [
                 542,
                 234,
@@ -59,22 +59,16 @@
                 "show": true,
                 "position": "top",
                 "fontSize": 12
-            },
-            "rippleEffect": {
-                "show": true,
-                "brushType": "stroke",
-                "scale": 2.5,
-                "period": 4
             }
         }
     ],
     "legend": [
         {
             "data": [
-                "\u5546\u5bb6A"
+                "\u661f\u5df4\u514b\u6570\u91cf"
             ],
             "selected": {
-                "\u5546\u5bb6A": true
+                "\u661f\u5df4\u514b\u6570\u91cf": true
             },
             "show": true
         }
@@ -117,6 +111,9 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
+            "axisLabel": {
+                "interval": 0
+            },
             "inverse": false,
             "splitLine": {
                 "show": false,
@@ -143,12 +140,42 @@
     ],
     "title": [
         {
-            "text": "\u4e3b\u6807\u9898:\u5546\u5bb6",
-            "subtext": "\u526f\u6807\u9898:\u9500\u552e\u8bb0\u5f55"
+            "text": "\u661f\u5df4\u514b\u6570\u91cf",
+            "subtext": "\u5168\u56fd\u524d10\u57ce\u5e02"
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
 };
-        chart_1c1024365192464fbe9bdaae871d8f7e.setOption(option_1c1024365192464fbe9bdaae871d8f7e);
+        chart_7c60bedbef8e45aba973f0c428f849f8.setOption(option_7c60bedbef8e45aba973f0c428f849f8);
     </script>
 </body>
 </html>
