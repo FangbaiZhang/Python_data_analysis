@@ -81,6 +81,13 @@ c  8  9  10  11
     - 使用方法和loc一样，不过是使用标签名称所在行列的位置
     - loc['a':'c', ['W', 'Z']]
     - iloc[0:3, [0, 3]]
+    
+# DataFrame分组
+- 按列分组（一个中括号）结果是Series一维数组
+    - df1 = df['Country'].groupby(by=[df['Country'], df['State/Province']])
+- 按列分组（两个个中括号）结果是DataFrame二维数组
+    - df2 = df[['Country']].groupby(by=[df['Country'], df['State/Province']])
+    - 参考案例：006_Pandas_groupby_多条件查找
 
     
     
