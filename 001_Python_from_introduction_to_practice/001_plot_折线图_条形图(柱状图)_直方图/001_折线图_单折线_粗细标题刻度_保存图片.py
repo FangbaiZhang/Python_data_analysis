@@ -16,8 +16,8 @@ plt.figure(figsize=(10, 8), dpi=128)
 
 
 # 第二步:传入数据，和线条的基本参数
-# 默认第一个参数是x坐标，第二个y坐标，指定线条宽度
-plt.plot(input_values, squares, linewidth=5, linestyle='-.')
+# 默认第一个参数是x坐标，第二个y坐标，指定线条宽度，点标记等
+plt.plot(input_values, squares, color='red', marker='D', linewidth=1, linestyle='-.')
 
 
 # 第三步:自定义美化
