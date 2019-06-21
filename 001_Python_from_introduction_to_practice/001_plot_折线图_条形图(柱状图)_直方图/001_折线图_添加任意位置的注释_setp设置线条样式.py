@@ -20,7 +20,8 @@ plt.figure(figsize=(10, 8), dpi=128)
 plt.subplot(2, 1, 1)
 line1= plt.plot(x, y1)
 plt.ylim(-2, 2)
-# 添加注释,传入注释内容，注释的点坐标，注释文字的坐标位置，箭头赊着
+# 添加注释,传入注释内容，注释的箭头的点坐标，注释文字的坐标位置，
+# shrink设置箭头末端和文字起点的间距，箭头自己会根据箭头起点和文字起点自适应大小和倾斜角度
 plt.annotate('我是注释', xy=(2, 1), xytext=(3, 1.5), arrowprops=dict(facecolor='red', edgecolor='red', shrink=0.05))
 
 # 绘制第二个图
