@@ -28,7 +28,10 @@ for m in range(nrows):
         # 添加文字
         ax[m, n].text(0.25, 0.5, "axes[%d, %d]" % (m, n), fontsize=15, color='red')
 
-ax[1, 1].text(0.15, 0.25, 'subplots演示', fontsize=15, color='blue')
+ax[1, 1].text(0.5, 0.2, 'subplots演示', fontsize=15, color='blue', horizontalalignment='center')
+
+# plt直接设置，是默认在最后一个子绘图对象上面设置
+plt.text(0, 0, 'figure画布注释', ha='left', rotation=-15, wrap=True)
 
 plt.show()
 

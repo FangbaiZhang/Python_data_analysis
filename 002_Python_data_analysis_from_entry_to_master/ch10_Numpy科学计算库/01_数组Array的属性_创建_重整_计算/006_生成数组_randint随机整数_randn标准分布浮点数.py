@@ -7,6 +7,11 @@ a = np.random.randint(10, 20, (4, 4))
 print(a)
 print("*" * 50)
 
+# 也可以使用关键字参数
+a1 = np.random.randint(low=1, high=10, size=10)
+print(a1)
+print("*" * 50)
+
 # 生成标准分布的浮点数，传入形状，标准差为1
 b = np.random.randn(4, 4)
 print(b)
