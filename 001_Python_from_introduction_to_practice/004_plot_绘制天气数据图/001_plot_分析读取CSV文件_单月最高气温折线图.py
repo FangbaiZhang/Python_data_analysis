@@ -31,7 +31,7 @@ with open('sitka_weather_07-2014.csv', encoding='utf-8') as f:
     # 上面输出显示获取文件中的最高气温，上面输出显示，第1列为日期，第2列为最高气温
     dates, highs = [], []
     # 从第2行开始遍历每一行，因为第一行前面已经采用next读取了
-    # 将每一行第一个数据和第二个数据，日期和最高气温提取添加到列表中
+    # 将每一行第一个数据和第二个数据，日期和最高气温提取添加到列表
     for row in reader:
         # 提取日期
         current_date = datetime.strptime(row[0], "%Y/%m/%d") # 注意单月天气的日期之间是用的/
