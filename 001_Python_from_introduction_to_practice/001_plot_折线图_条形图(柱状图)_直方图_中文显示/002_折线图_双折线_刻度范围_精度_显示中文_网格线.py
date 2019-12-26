@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import font_manager
 
-# 设置支持中文显示方法1，推荐使用，只需要设置一行即可，后面不需要像方法2一样多次传参数
+# 方法1：加上下面两句代码，推荐使用，只需要设置一行即可，后面不需要像方法2一样多次传参数
 # 使用以下方式，给键传入值，值为中文字体的英文名称：黑体=SimHei,宋体=SimSun
 # plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
-# 设置支持中文显示方法2,先实例化一个自定义字体格式，传入的参数为电脑系统中文字体的路径
+# 方法2：先实例化一个自定义字体格式，传入的参数为电脑系统中文字体的路径
 # windows系统字体都放在Fonts里面，路径可以打开CMD窗口，拖一个中文字体到CMD窗口，
 # 路径就出来了，按下Enter，会打开显示当前的字体
 # 注意，自定义中文字体后，下面需要显示中文的地方还需要传入fontproperties=my_font参数
