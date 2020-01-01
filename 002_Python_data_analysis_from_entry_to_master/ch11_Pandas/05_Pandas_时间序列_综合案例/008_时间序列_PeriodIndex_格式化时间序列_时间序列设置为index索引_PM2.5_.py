@@ -30,5 +30,4 @@ print('*' * 100)
 df.set_index('datetime', inplace=True)
 print(df.head())
 print('*' * 100)
-print('*' * 100)
-print('*' * 100)
+
