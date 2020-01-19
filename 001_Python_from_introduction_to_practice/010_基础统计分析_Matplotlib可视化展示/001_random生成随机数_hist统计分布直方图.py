@@ -21,6 +21,5 @@ ax[1].set_title('randn标准分布浮点数')
 ax[2].hist(np.random.randint(low=0, high=10, size=10000)) #randint函数生成随机整数，指定上限下限个数
 ax[2].set_title('randint随机整数')
 
-
 plt.show()
 
