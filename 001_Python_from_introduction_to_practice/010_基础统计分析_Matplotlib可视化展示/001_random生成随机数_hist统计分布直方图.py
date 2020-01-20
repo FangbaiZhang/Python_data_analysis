@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import numpy as np
 
 # 显示中文和显示负号
