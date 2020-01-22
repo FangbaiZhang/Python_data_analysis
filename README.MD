@@ -1,6 +1,7 @@
 # Deep learning of Python data analysis 
 # Python数据分析深入学习整理
 
+
 ## 001_Python_from_introduction_to_practice
 - Python编程：从入门到实践 
     - 项目2: 数据可视化(第15章-第17章)
@@ -8,6 +9,7 @@
     - 案例整理汇总
     - matplotlib: 折线图—条形图-散点图
     - pygal: 柱状图-矢量图-世界人口地图-世界经济地图
+  
     
 ## 002_Python_data_analysis_from_entry_to_master
 - Python数据分析: 从入门到精通
