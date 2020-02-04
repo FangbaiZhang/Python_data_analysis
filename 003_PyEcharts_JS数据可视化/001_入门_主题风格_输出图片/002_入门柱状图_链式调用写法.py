@@ -6,6 +6,7 @@ from pyecharts.charts import Bar
 
 bar = (
     Bar()
+    .
     # 添加X轴数据
     .add_xaxis(["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"])
     # 添加Y轴数据,系列的名称
